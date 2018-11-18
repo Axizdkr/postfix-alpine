@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.8
 
 RUN	true && \
 	apk add --no-cache --update postfix ca-certificates supervisor rsyslog bash python3 && \
