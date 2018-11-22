@@ -8,6 +8,7 @@ COPY	supervisord.conf /etc/supervisord.conf
 COPY	rsyslog.conf /etc/rsyslog.conf
 COPY	postfix.sh /postfix.sh
 RUN	chmod +x /postfix.sh
+RUN     pip3 install ldap3 lepl
 RUN	touch /var/log/cron.log
 
 USER	root
